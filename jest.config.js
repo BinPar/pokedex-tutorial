@@ -12,6 +12,7 @@ module.exports = {
     "!**/node_modules/**",
     "!**/.next/**",
     "!**/pages/_document.tsx",
+    "!**/test/mocks/**",
     "!**/pages/_app.tsx",
     "!next-env.d.ts"
   ],
