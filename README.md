@@ -1,4 +1,4 @@
-# TypeScript Next Boilerplate
+# Pokedex Tutorial
 
 Pokedex tutorial using:
 
