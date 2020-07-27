@@ -81,4 +81,6 @@ main > h1 {
 .card--details {
     font-size: 1.3rem;
     color: #dbca80;
+    margin-left: 4px;
+    margin-right: 4px;
 }
