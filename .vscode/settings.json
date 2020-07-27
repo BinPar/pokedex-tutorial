@@ -12,6 +12,7 @@
     "esnext",
     "lcov",
     "metapod",
+    "minmax",
     "plusplus"
   ]
 }
