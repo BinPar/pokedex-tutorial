@@ -1,4 +1,6 @@
 import axios from 'axios';
+import fs from 'fs';
+import path from 'path';
 import { Pokemon, Stats } from '../model/pokemon';
 
 interface DataItem {
@@ -31,11 +33,22 @@ const getPokemonInfo = async (url: string): Promise<Pokemon> => {
   }
 }
 
-const getAllPokemonsFromServer = async (): Promise<Pokemon[]> => {
-  const result = await axios.get('https://pokeapi.co/api/v2/pokemon?limit=1000');
+const jsonPath = path.join(process.cwd(), 'data/pokemon.json');
+
+const updateAllPokemonsFromServer = async (): Promise<Pokemon[]> => {
+  const result = await axios.get('https://pokeapi.co/api/v2/pokemon?limit=2000');
   const data = result.data as DataResult;
-  const promises = data.results.map((item) => getPokemonInfo(item.url));
-  const results = await Promise.all(promises);
+  const results: Pokemon[] = [];
+  while (data.results.length) {
+    const item = data.results.shift();
+    // eslint-disable-next-line no-await-in-loop
+    const info = await getPokemonInfo(item.url);
+    // eslint-disable-next-line no-console
+    console.log(`loading...${item.name}`)
+    
+    results.push(info);
+  }  
+  await fs.promises.writeFile(jsonPath, JSON.stringify(results), 'utf8');
   return results;
 }
 
@@ -43,7 +56,12 @@ let myPokemons: Pokemon[];
 
 const getAllPokemons = async (): Promise<Pokemon[]> => {
   if (!myPokemons) {
-    myPokemons = await getAllPokemonsFromServer();
+    try {
+      const pokemonsJSON = await fs.promises.readFile(jsonPath,'utf8');
+      myPokemons = JSON.parse(pokemonsJSON) as Pokemon[];
+    } catch {
+      myPokemons = await updateAllPokemonsFromServer();
+    }
   }
   return myPokemons;
 }

@@ -43,7 +43,6 @@ main > h1 {
     border-top: 0.5px solid #cebf7b;
     border-bottom: 0.5px solid #cebf7b;
     text-align: center;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     position: relative;
     overflow: hidden;
     cursor: pointer;
@@ -68,7 +67,7 @@ main > h1 {
 .card--name {
     text-transform: capitalize;
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
