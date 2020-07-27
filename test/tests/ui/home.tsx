@@ -1,12 +1,13 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import mockNextUseRouter from '../../mocks/mockNextUseRouter';
-import Index from '../../../pages/index';
+import Index, {getStaticProps} from '../../../pages/index';
+
 
 /**
  * Checks that the Home Page redirects to some sample
  */
-test('Home Page', () => {
+test('Home Page', async (): Promise<void> => {
   /**
    * Mocks the next router
    */
@@ -17,8 +18,9 @@ test('Home Page', () => {
     asPath: '/',
   });
 
+  const staticProps = await getStaticProps({});
   // Renders the page
-  const page = mount(<Index />);
+  const page = mount(<Index {...staticProps.props}  />);
 
   // We check that the content of the page is not changed
   // expect(page).toMatchSnapshot();

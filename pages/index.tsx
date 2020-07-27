@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import { GetStaticProps, GetServerSideProps } from 'next';
+import { GetStaticProps } from 'next';
 import { PokemonCard } from '../model/pokemon';
 import Card from '../components/Card';
 import getPokemonCards from '../logic/pokemonCards';
