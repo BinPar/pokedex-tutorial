@@ -1,6 +1,7 @@
 import React from 'react';
 import { GetServerSideProps } from 'next';
 import Head from 'next/head';
+import Link from 'next/link';
 import getPokemon from '../../logic/getPokemon';
 import { Pokemon } from '../../model/pokemon';
 
@@ -15,7 +16,6 @@ const PokemonPage = ({pokemon}: PokemonProps): JSX.Element => {
         <title>{`Pokemon ${pokemon.name}`}</title>
       </Head>
       <main>           
-      
         <h1>{`#${pokemon.id}`}</h1>
         <h1><img src={pokemon.imageURL} alt={pokemon.name} /></h1>
         <h1>{`Name: ${pokemon.name}`}</h1>
@@ -35,6 +35,8 @@ const PokemonPage = ({pokemon}: PokemonProps): JSX.Element => {
             </React.Fragment>
             ))}
         </h1>
+        
+        <a><Link href="/"> Volver a home</Link></a>
         
       </main>
     </React.Fragment>
