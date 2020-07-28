@@ -3,10 +3,6 @@ import { mount } from 'enzyme';
 import mockNextUseRouter from '../../mocks/mockNextUseRouter';
 import Index, {getStaticProps} from '../../../pages/index';
 
-
-/**
- * Checks that the Home Page redirects to some sample
- */
 test('Home Page', async (): Promise<void> => {
   /**
    * Mocks the next router
