@@ -22,6 +22,7 @@ const PokemonPage = ({pokemon}: PokemonProps): JSX.Element => {
         <h1>{`Height: ${pokemon.height}`}</h1>
         <h1>{`Weight: ${pokemon.weight}`}</h1>
         <h1>
+          {`Type: `}
           {Object.keys(pokemon.types).map(key => (
             <React.Fragment key={key}>
               {`${pokemon.types[key]} `}
