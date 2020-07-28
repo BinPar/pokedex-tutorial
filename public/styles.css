@@ -107,6 +107,11 @@ a {
   margin: auto;
 }
 
+.detail--image {
+  width: 150px;
+  margin: auto;
+}
+
 .card--details {
   font-size: 1.3rem;
   color: #dbca80;

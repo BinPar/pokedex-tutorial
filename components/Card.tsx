@@ -8,7 +8,7 @@ interface CardProps {
 
 const Card = ({ pokemonCard }: CardProps): JSX.Element => {
   return (
-    <Link href="/pokemon/[name]" as={`/pokemon/${pokemonCard.name}`}>
+    <Link href="/myPokemon/[name]" as={`/myPokemon/${pokemonCard.name}`}>
       <a>
         <div className="card">
           <span className="card--id">{`#${pokemonCard.id}`}</span>

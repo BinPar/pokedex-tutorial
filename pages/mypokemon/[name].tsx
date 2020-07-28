@@ -2,7 +2,7 @@ import React from 'react';
 import { GetServerSideProps } from 'next';
 import Link from 'next/link';
 import Head from 'next/head';
-import getPokemon from '../../logic/getPokemon';
+import getMyPokemon from '../../logic/getMyPokemon';
 import { Pokemon } from '../../model/pokemon';
 
 interface PokemonProps {
@@ -10,7 +10,7 @@ interface PokemonProps {
 }
 
 const PokemonPage = ({ pokemon }: PokemonProps): JSX.Element => {
-  const text = `Pokemon ${pokemon.name}`;
+  const text = `${pokemon.name}`;
   const style = {
     color: '#ff0',
   };
@@ -23,20 +23,26 @@ const PokemonPage = ({ pokemon }: PokemonProps): JSX.Element => {
       <h1 style={style}>{text}</h1>
       <main>
         <p>{`#${pokemon.id}`}</p>
-        <img className="card--image" src={pokemon.imageURL} alt={pokemon.name} />
+        <img
+          className="detail--image"
+          src={pokemon.imageURL}
+          alt={pokemon.name}
+        />
         <h2>Info</h2>
         <dl>
-          <dt>Height:</dt>
+          <dt>Height: </dt>
           <dd>{pokemon.height}</dd>
-          <dt>Weight:</dt>
+          <dt>Weight: </dt>
           <dd>{pokemon.weight}</dd>
-          <dt>Types:</dt>
+          <dt>Types: </dt>
+          {/* Concatena cada type */}
           <dd>
-            {pokemon.types.reduce((types, item) => `${types} ${item}`, '')}
+            {pokemon.types.reduce((types, type) => `${types} ${type}`, '')}
           </dd>
         </dl>
         <h2>Stats</h2>
         <dl>
+          {/* Genera dt y dl por cada valor de stat */}
           {Object.keys(pokemon.stats).map((key) => (
             <React.Fragment key={key}>
               <dt>{`${key}:`}</dt>
@@ -44,13 +50,14 @@ const PokemonPage = ({ pokemon }: PokemonProps): JSX.Element => {
             </React.Fragment>
           ))}
         </dl>
-
+      </main>
+      <footer>
         <div style={{ width: '100%', clear: 'both', paddingTop: 20 }}>
           <Link href="/">
-            <a href="/">Ir a home</a>
+            <a href="/">Go Home</a>
           </Link>
         </div>
-      </main>
+      </footer>
     </React.Fragment>
   );
 };
@@ -58,7 +65,7 @@ const PokemonPage = ({ pokemon }: PokemonProps): JSX.Element => {
 export const getServerSideProps: GetServerSideProps<PokemonProps> = async ({
   params,
 }) => {
-  const pokemon = await getPokemon(`${params.name}`);
+  const pokemon = await getMyPokemon(`${params.name}`);
   return {
     props: {
       pokemon,
