@@ -78,6 +78,7 @@ const Index = ({ pokemonCards, pokemonTypes }: IndexProps): JSX.Element => {
           >
             None
           </button>
+          <span>* Use Control or Shift to Select multiple items</span>
         </p>
         <div id="app">
           {selectedPokemonCards.map((card) => (
