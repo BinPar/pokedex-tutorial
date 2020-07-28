@@ -51,13 +51,11 @@ const PokemonPage = ({ pokemon }: PokemonProps): JSX.Element => {
           ))}
         </dl>
       </main>
-      <footer>
-        <div style={{ width: '100%', clear: 'both', paddingTop: 20 }}>
-          <Link href="/">
-            <a href="/">Go Home</a>
-          </Link>
-        </div>
-      </footer>
+      <div style={{ width: '100%', clear: 'both', paddingTop: 20 }}>
+        <Link href="/">
+          <a href="/">Go Home</a>
+        </Link>
+      </div>
     </React.Fragment>
   );
 };
