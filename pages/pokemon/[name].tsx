@@ -37,7 +37,7 @@ const PokemonPage = ({pokemon}: PokemonProps): JSX.Element => {
             ))}
         </h1>
         
-        <a><Link href="/"> Volver a home</Link></a>
+        <h1><Link href="/"> Volver a home</Link></h1>
         
       </main>
     </React.Fragment>
