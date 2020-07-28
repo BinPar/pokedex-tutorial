@@ -22,12 +22,18 @@ const PokemonPage = ({pokemon}: PokemonProps): JSX.Element => {
         <h1>{`Height: ${pokemon.height}`}</h1>
         <h1>{`Weight: ${pokemon.weight}`}</h1>
         <h1>
-          {`${pokemon.types.map(key => (
+          {Object.keys(pokemon.types).map(key => (
             <React.Fragment key={key}>
-              <dt>{`${key}:`}</dt>
+              {`${pokemon.types[key]} `}
             </React.Fragment>
-            ))}`}
-
+            ))}
+        </h1>
+        <h1>
+          {Object.keys(pokemon.stats).map(key => (
+            <React.Fragment key={key}>
+              <dd>{` ${key}: ${pokemon.stats[key]}`}</dd>
+            </React.Fragment>
+            ))}
         </h1>
         
       </main>
