@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+a {
+  color: #fff;
+}
+
 body {
   background: #333;
   line-height: 1.5;
@@ -16,6 +20,7 @@ main {
   padding: 1rem;
   max-width: 1100px;
   margin: auto;
+  color: white;
 }
 
 main > h1 {
@@ -26,14 +31,34 @@ main > h1 {
   text-transform: uppercase;
 }
 
+h2 {
+  clear: both;
+  padding-top: 20px;
+}
+
+main dt {
+  clear: both;
+  float: left;
+  font-weight: 900;
+  width: 120px;
+}
+
+main dd {
+  float: left;
+  font-weight: 300;
+  width: 200px;
+}
 #app {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   grid-gap: 1.5rem;
   justify-content: center;
-  align-items: center;
+  align-items: center;  
 }
 
+a {
+  text-decoration: none;
+}
 .card {
   width: 12rem auto;
   background: #444;
