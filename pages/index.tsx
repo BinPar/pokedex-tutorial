@@ -1,10 +1,10 @@
 import React from 'react';
 import Head from 'next/head';
 import { GetStaticProps } from 'next';
+import Link from 'next/Link';
 import { PokemonCard } from '../model/pokemon';
 import Card from '../components/Card';
 import getPokemonCards from '../logic/pokemonCards';
-
 
 interface IndexProps {
   pokemonCards: PokemonCard[];
