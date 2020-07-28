@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { PokemonCard }   from '../model/pokemon';
+import { PokemonCard } from '../model/pokemon';
 
 interface CardProps {
   pokemonCard: PokemonCard;
@@ -8,6 +8,7 @@ interface CardProps {
 
 const Card = ({ pokemonCard }: CardProps): JSX.Element => {
   return (
+    // se espicifica la norma para construir la ruta. en este caso, será dinámica, dándole el nombre 'pokemonCard.name'
     <Link href="/myPokemon/[name]" as={`/myPokemon/${pokemonCard.name}`}>
       <a>
         <div className="card">
@@ -18,11 +19,11 @@ const Card = ({ pokemonCard }: CardProps): JSX.Element => {
             alt={pokemonCard.name}
           />
           <h2 className="card--name">{pokemonCard.name}</h2>
-          {
-            pokemonCard.types.map((type) => (
-              <span key={type} className="card--details">{type}</span>
-            ))
-          }
+          {pokemonCard.types.map((type) => (
+            <span key={type} className="card--details">
+              {type}
+            </span>
+          ))}
         </div>
       </a>
     </Link>

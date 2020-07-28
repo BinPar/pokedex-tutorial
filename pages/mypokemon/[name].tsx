@@ -35,7 +35,7 @@ const PokemonPage = ({ pokemon }: PokemonProps): JSX.Element => {
           <dt>Weight: </dt>
           <dd>{pokemon.weight}</dd>
           <dt>Types: </dt>
-          {/* Concatena cada type */}
+          {/* Concatena cada type, siendo '' el valor inicial del resultado */}
           <dd>
             {pokemon.types.reduce((types, type) => `${types} ${type}`, '')}
           </dd>
