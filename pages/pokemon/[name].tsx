@@ -21,7 +21,7 @@ const PokemonPage = ({ pokemon }: PokemonProps): JSX.Element => {
     </React.Fragment>
   );
 };
-export const getServerSide: GetServerSideProps<PokemonProps> = async ({
+export const getServerSideProps: GetServerSideProps<PokemonProps> = async ({
   params,
 }) => {
   const pokemonData = await getPokemonByName(`${params}`);
