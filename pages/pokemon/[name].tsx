@@ -1,9 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
+import { GetStaticPaths } from 'next';
 import useToggle from '../../hooks/useToggle';
 import getPokemon from '../../logic/getPokemon';
 import { Pokemon } from '../../model/pokemon';
+import getPokemonCards from '../../logic/pokemonCards';
 
 interface PokemonProps {
   pokemon: Pokemon;
@@ -82,12 +84,24 @@ interface ServerSideProps {
   ({ params: { name: string } }): Promise<{ props: PokemonProps }>;
 }
 
-export const getServerSideProps: ServerSideProps = async ({ params }) => {
+export const getStaticProps: ServerSideProps = async ({ params }) => {
   const pokemon = await getPokemon(`${params.name}`);
   return {
     props: {
       pokemon,
     },
+  };
+};
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const pokemonCards = await getPokemonCards();
+  return {
+    paths: pokemonCards.map((card) => ({
+      params: {
+        name: card.name,
+      },
+    })),
+    fallback: false,
   };
 };
 

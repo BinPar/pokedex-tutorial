@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import mockNextUseRouter from '../../mocks/mockNextUseRouter';
-import Pokemon, { getServerSideProps } from '../../../pages/pokemon/[name]';
+import Pokemon, { getStaticProps } from '../../../pages/pokemon/[name]';
 
 test('Pokemon Page', async (): Promise<void> => {
   /**
@@ -16,7 +16,7 @@ test('Pokemon Page', async (): Promise<void> => {
     asPath: '/pokemon/bulbasaur',
   });
 
-  const serverSideProps = await getServerSideProps({
+  const serverSideProps = await getStaticProps({
     params: { name: 'bulbasaur' },    
   });
 
