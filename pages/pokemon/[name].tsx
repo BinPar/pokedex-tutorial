@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import Head from 'next/head';
 import { GetStaticPaths } from 'next';
 import useToggle from '../../hooks/useToggle';
@@ -26,6 +25,11 @@ const PokemonPage = ({ pokemon }: PokemonProps): JSX.Element => {
   const [showStats, toggleStats] = useToggle(true);
 
   const text = `Pokemon ${pokemon.name}`;
+
+  const goBack = (ev: React.MouseEvent): void => {
+    ev.preventDefault();
+    window.history.back();
+  }
 
   return (
     <React.Fragment>
@@ -71,9 +75,7 @@ const PokemonPage = ({ pokemon }: PokemonProps): JSX.Element => {
           </dl>
         ) : null}
         <div style={{ width: '100%', clear: 'both', paddingTop: 20 }}>
-          <Link href="/">
-            <a href="/">Ir a home</a>
-          </Link>
+          <a href="/" onClick={goBack}>Back</a>          
         </div>
       </main>
     </React.Fragment>
