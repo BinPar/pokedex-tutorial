@@ -18,26 +18,26 @@ const PokemonPage = ({pokemon}: PokemonProps): JSX.Element => {
       <main>           
         <h1>{`#${pokemon.id}`}</h1>
         <h1><img src={pokemon.imageURL} alt={pokemon.name} /></h1>
-        <h1>{`Name: ${pokemon.name}`}</h1>
-        <h1>{`Height: ${pokemon.height}`}</h1>
-        <h1>{`Weight: ${pokemon.weight}`}</h1>
-        <h1>
+        <dt>{`Name: ${pokemon.name}`}</dt>
+        <dt>{`Height: ${pokemon.height}`}</dt>
+        <dt>{`Weight: ${pokemon.weight}`}</dt>
+        <dt>
           {`Type: `}
           {Object.keys(pokemon.types).map(key => (
             <React.Fragment key={key}>
               {`${pokemon.types[key]} `}
             </React.Fragment>
             ))}
-        </h1>
-        <h1>
+        </dt>
+        <dt>
           {Object.keys(pokemon.stats).map(key => (
             <React.Fragment key={key}>
               <dd>{` ${key}: ${pokemon.stats[key]}`}</dd>
             </React.Fragment>
             ))}
-        </h1>
+        </dt>
         
-        <h1><Link href="/"> Volver a home</Link></h1>
+        <dt><Link href="/"> Volver a home</Link></dt>
         
       </main>
     </React.Fragment>
