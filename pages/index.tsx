@@ -54,12 +54,12 @@ const Index = ({ pokemonCards, pokemonTypes }: IndexProps): JSX.Element => {
   }; */
   
 const selectAll = (): void =>{
-
-  persistentTypes = [...pokemonTypes];
+  setSelectedTypes([...pokemonTypes]);
 };
 const selectNone = (): void =>{
 
-  persistentTypes = [];
+  setSelectedTypes([]);
+  // persistentTypes = [];
 };
 
   return (
