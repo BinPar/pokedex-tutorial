@@ -1,5 +1,5 @@
 import { PokemonCard } from '../model/pokemon';
-import getAllPokemons from './pokemonInfo';
+import getAllPokemons from './pokemonInfo'
 
 const getPokemonCards = async (): Promise<PokemonCard[]> => {
   const allData = await getAllPokemons();

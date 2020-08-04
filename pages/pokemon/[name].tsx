@@ -1,9 +1,11 @@
 import React from 'react';
+import { GetStaticPaths } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
 import { Pokemon } from '../../model/pokemon';
 import getPokemon from '../../logic/getPokemon';
 import useToggle from '../../hooks/toggle';
+import getPokemonCards from '../../logic/pokemonCards';
 
 interface PokemonProps {
   pokemon: Pokemon;
@@ -72,7 +74,7 @@ const PokemonPage = ({ pokemon }: PokemonProps): JSX.Element => {
   );
 };
 interface ServerProps {
-  ({params: { name: string }}): Promise<{ props: PokemonProps }>;
+  ({ params: { name: string } }): Promise<{ props: PokemonProps }>;
 }
 export const getStaticProps: ServerProps = async ({ params }) => {
   const pokemon = await getPokemon(`${params.name}`);
@@ -80,6 +82,17 @@ export const getStaticProps: ServerProps = async ({ params }) => {
     props: {
       pokemon,
     },
+  };
+};
+export const getStaticPaths: GetStaticPaths = async () => {
+  const pokemonCards = await getPokemonCards();
+  return {
+    paths: pokemonCards.map((card) => ({
+      params: {
+        name: card.name,
+      },
+    })), 
+    fallback: false,
   };
 };
 
