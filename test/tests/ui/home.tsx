@@ -2,6 +2,7 @@ import React from 'react';
 import { mount } from 'enzyme';
 import mockNextUseRouter from '../../mocks/mockNextUseRouter';
 import Index, {getStaticProps} from '../../../pages/index';
+import { getStaticPaths } from '../../../pages/pokemon/[name]'
 
 
 /**
@@ -21,6 +22,9 @@ test('Home Page', async (): Promise<void> => {
   const staticProps = await getStaticProps({});
   // Renders the page
   const page = mount(<Index {...staticProps.props}  />);
+
+  const staticPaths = await getStaticPaths();
+  expect(staticPaths.paths).toHaveLength(897);
 
   // We check that the content of the page is not changed
   expect(page).toMatchSnapshot('All');
