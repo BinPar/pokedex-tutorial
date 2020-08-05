@@ -8,7 +8,7 @@ interface CardProps {
 
 const Card = ({ pokemonCard }: CardProps): JSX.Element => {
   return (
-    // se espicifica la norma para construir la ruta. en este caso, será dinámica, dándole el nombre 'pokemonCard.name'
+    // se especifica la norma para construir la ruta. en este caso, será dinámica, dándole el nombre 'pokemonCard.name'
     <Link href="/myPokemon/[name]" as={`/myPokemon/${pokemonCard.name}`}>
       <a>
         <div className="card">
