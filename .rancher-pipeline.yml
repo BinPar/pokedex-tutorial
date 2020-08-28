@@ -1,0 +1,11 @@
+stages:
+- name: Generate Image
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: pokedex-tutorial
+      pushRemote: true
+      registry: 3.249.52.79:32371
+timeout: 60
+notification: {}
