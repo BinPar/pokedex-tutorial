@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":52,"name":"meowth","weight":42,"height":4,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png","types":["normal"],"stats":{"hp":40,"attack":45,"defense":35,"special-attack":40,"special-defense":40,"speed":90}}},"__N_SSG":true}

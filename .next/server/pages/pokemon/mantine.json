@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":226,"name":"mantine","weight":2200,"height":21,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/226.png","types":["water","flying"],"stats":{"hp":85,"attack":40,"defense":70,"special-attack":80,"special-defense":140,"speed":70}}},"__N_SSG":true}

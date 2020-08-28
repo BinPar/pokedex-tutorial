@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":110,"name":"weezing","weight":95,"height":12,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png","types":["poison"],"stats":{"hp":65,"attack":90,"defense":120,"special-attack":85,"special-defense":70,"speed":60}}},"__N_SSG":true}

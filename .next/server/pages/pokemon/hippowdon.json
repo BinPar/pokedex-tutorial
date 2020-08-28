@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":450,"name":"hippowdon","weight":3000,"height":20,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/450.png","types":["ground"],"stats":{"hp":108,"attack":112,"defense":118,"special-attack":68,"special-defense":72,"speed":47}}},"__N_SSG":true}

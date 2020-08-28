@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":47,"name":"parasect","weight":295,"height":10,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png","types":["bug","grass"],"stats":{"hp":60,"attack":95,"defense":80,"special-attack":60,"special-defense":80,"speed":30}}},"__N_SSG":true}

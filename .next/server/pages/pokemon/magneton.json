@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":82,"name":"magneton","weight":600,"height":10,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png","types":["electric","steel"],"stats":{"hp":50,"attack":60,"defense":95,"special-attack":120,"special-defense":70,"speed":70}}},"__N_SSG":true}

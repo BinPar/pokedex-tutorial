@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":777,"name":"togedemaru","weight":33,"height":3,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/777.png","types":["electric","steel"],"stats":{"hp":65,"attack":98,"defense":63,"special-attack":40,"special-defense":73,"speed":96}}},"__N_SSG":true}

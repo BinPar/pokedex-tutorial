@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":174,"name":"igglybuff","weight":10,"height":3,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/174.png","types":["normal","fairy"],"stats":{"hp":90,"attack":30,"defense":15,"special-attack":40,"special-defense":20,"speed":15}}},"__N_SSG":true}

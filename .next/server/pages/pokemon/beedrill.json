@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":15,"name":"beedrill","weight":295,"height":10,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png","types":["bug","poison"],"stats":{"hp":65,"attack":90,"defense":40,"special-attack":45,"special-defense":80,"speed":75}}},"__N_SSG":true}

@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":56,"name":"mankey","weight":280,"height":5,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png","types":["fighting"],"stats":{"hp":40,"attack":80,"defense":35,"special-attack":35,"special-defense":45,"speed":70}}},"__N_SSG":true}

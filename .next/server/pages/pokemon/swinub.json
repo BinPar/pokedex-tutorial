@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":220,"name":"swinub","weight":65,"height":4,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/220.png","types":["ice","ground"],"stats":{"hp":50,"attack":50,"defense":40,"special-attack":30,"special-defense":30,"speed":50}}},"__N_SSG":true}

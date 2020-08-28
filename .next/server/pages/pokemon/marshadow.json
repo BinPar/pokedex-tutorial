@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":802,"name":"marshadow","weight":222,"height":7,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/802.png","types":["fighting","ghost"],"stats":{"hp":90,"attack":125,"defense":80,"special-attack":90,"special-defense":90,"speed":125}}},"__N_SSG":true}

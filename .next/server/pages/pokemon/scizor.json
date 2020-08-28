@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":212,"name":"scizor","weight":1180,"height":18,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/212.png","types":["bug","steel"],"stats":{"hp":70,"attack":130,"defense":100,"special-attack":55,"special-defense":80,"speed":65}}},"__N_SSG":true}

@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":198,"name":"murkrow","weight":21,"height":5,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/198.png","types":["dark","flying"],"stats":{"hp":60,"attack":85,"defense":42,"special-attack":85,"special-defense":42,"speed":91}}},"__N_SSG":true}

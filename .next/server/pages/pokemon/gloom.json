@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":44,"name":"gloom","weight":86,"height":8,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png","types":["grass","poison"],"stats":{"hp":60,"attack":65,"defense":70,"special-attack":85,"special-defense":75,"speed":40}}},"__N_SSG":true}

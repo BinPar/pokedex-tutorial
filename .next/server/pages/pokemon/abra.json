@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":63,"name":"abra","weight":195,"height":9,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png","types":["psychic"],"stats":{"hp":25,"attack":20,"defense":15,"special-attack":105,"special-defense":55,"speed":90}}},"__N_SSG":true}

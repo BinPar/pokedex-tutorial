@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":66,"name":"machop","weight":195,"height":8,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png","types":["fighting"],"stats":{"hp":70,"attack":80,"defense":50,"special-attack":35,"special-defense":35,"speed":35}}},"__N_SSG":true}

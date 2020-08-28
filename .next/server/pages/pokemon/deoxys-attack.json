@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":10001,"name":"deoxys-attack","weight":608,"height":17,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10001.png","types":["psychic"],"stats":{"hp":50,"attack":180,"defense":20,"special-attack":180,"special-defense":20,"speed":150}}},"__N_SSG":true}

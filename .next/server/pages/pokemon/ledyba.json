@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":165,"name":"ledyba","weight":108,"height":10,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/165.png","types":["bug","flying"],"stats":{"hp":40,"attack":20,"defense":30,"special-attack":40,"special-defense":80,"speed":55}}},"__N_SSG":true}

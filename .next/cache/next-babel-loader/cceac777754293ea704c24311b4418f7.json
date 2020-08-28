@@ -1,0 +1,1 @@
+{"ast":null,"code":"import getAllPokemons from './pokemonInfo';\n\nconst getPokemon = async name => {\n  const allPokemons = await getAllPokemons();\n  const pokemon = allPokemons.find(item => item.name === name);\n  return pokemon;\n};\n\nexport default getPokemon;","map":null,"metadata":{},"sourceType":"module"}

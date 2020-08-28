@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":83,"name":"farfetchd","weight":150,"height":8,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png","types":["normal","flying"],"stats":{"hp":52,"attack":90,"defense":55,"special-attack":58,"special-defense":62,"speed":60}}},"__N_SSG":true}

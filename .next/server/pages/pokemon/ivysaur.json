@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":2,"name":"ivysaur","weight":130,"height":10,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png","types":["grass","poison"],"stats":{"hp":60,"attack":62,"defense":63,"special-attack":80,"special-defense":80,"speed":60}}},"__N_SSG":true}

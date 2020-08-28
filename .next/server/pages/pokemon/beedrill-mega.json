@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":10090,"name":"beedrill-mega","weight":405,"height":14,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10090.png","types":["bug","poison"],"stats":{"hp":65,"attack":150,"defense":40,"special-attack":15,"special-defense":80,"speed":145}}},"__N_SSG":true}

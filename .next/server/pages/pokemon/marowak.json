@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":105,"name":"marowak","weight":450,"height":10,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png","types":["ground"],"stats":{"hp":60,"attack":80,"defense":110,"special-attack":50,"special-defense":80,"speed":45}}},"__N_SSG":true}

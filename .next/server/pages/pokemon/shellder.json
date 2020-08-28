@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":90,"name":"shellder","weight":40,"height":3,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png","types":["water"],"stats":{"hp":30,"attack":65,"defense":100,"special-attack":45,"special-defense":25,"speed":40}}},"__N_SSG":true}

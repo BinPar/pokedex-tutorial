@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":406,"name":"budew","weight":12,"height":2,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/406.png","types":["grass","poison"],"stats":{"hp":40,"attack":30,"defense":35,"special-attack":50,"special-defense":70,"speed":55}}},"__N_SSG":true}

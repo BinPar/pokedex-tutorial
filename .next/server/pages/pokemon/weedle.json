@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":13,"name":"weedle","weight":32,"height":3,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png","types":["bug","poison"],"stats":{"hp":40,"attack":35,"defense":30,"special-attack":20,"special-defense":20,"speed":50}}},"__N_SSG":true}

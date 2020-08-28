@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":77,"name":"ponyta","weight":300,"height":10,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png","types":["fire"],"stats":{"hp":50,"attack":85,"defense":55,"special-attack":65,"special-defense":65,"speed":90}}},"__N_SSG":true}

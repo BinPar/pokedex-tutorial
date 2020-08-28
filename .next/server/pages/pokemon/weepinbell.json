@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":70,"name":"weepinbell","weight":64,"height":10,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/70.png","types":["grass","poison"],"stats":{"hp":65,"attack":90,"defense":50,"special-attack":85,"special-defense":45,"speed":55}}},"__N_SSG":true}

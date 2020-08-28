@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":74,"name":"geodude","weight":200,"height":4,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png","types":["rock","ground"],"stats":{"hp":40,"attack":80,"defense":100,"special-attack":30,"special-defense":30,"speed":20}}},"__N_SSG":true}

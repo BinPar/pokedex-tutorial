@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":40,"name":"wigglytuff","weight":120,"height":10,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png","types":["normal","fairy"],"stats":{"hp":140,"attack":70,"defense":45,"special-attack":85,"special-defense":50,"speed":45}}},"__N_SSG":true}

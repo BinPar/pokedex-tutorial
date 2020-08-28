@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":9,"name":"blastoise","weight":855,"height":16,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png","types":["water"],"stats":{"hp":79,"attack":83,"defense":100,"special-attack":85,"special-defense":105,"speed":78}}},"__N_SSG":true}

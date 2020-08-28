@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":17,"name":"pidgeotto","weight":300,"height":11,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png","types":["normal","flying"],"stats":{"hp":63,"attack":60,"defense":55,"special-attack":50,"special-defense":50,"speed":71}}},"__N_SSG":true}

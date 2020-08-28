@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":323,"name":"camerupt","weight":2200,"height":19,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/323.png","types":["fire","ground"],"stats":{"hp":70,"attack":100,"defense":70,"special-attack":105,"special-defense":75,"speed":40}}},"__N_SSG":true}

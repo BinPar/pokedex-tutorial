@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":602,"name":"tynamo","weight":3,"height":2,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/602.png","types":["electric"],"stats":{"hp":35,"attack":55,"defense":40,"special-attack":45,"special-defense":40,"speed":60}}},"__N_SSG":true}

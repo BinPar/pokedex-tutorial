@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":767,"name":"wimpod","weight":120,"height":5,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/767.png","types":["bug","water"],"stats":{"hp":25,"attack":35,"defense":40,"special-attack":20,"special-defense":30,"speed":80}}},"__N_SSG":true}

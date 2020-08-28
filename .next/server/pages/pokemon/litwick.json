@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":607,"name":"litwick","weight":31,"height":3,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/607.png","types":["ghost","fire"],"stats":{"hp":50,"attack":30,"defense":55,"special-attack":65,"special-defense":55,"speed":20}}},"__N_SSG":true}

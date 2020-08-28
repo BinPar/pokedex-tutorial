@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":343,"name":"baltoy","weight":215,"height":5,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/343.png","types":["ground","psychic"],"stats":{"hp":40,"attack":40,"defense":55,"special-attack":40,"special-defense":70,"speed":55}}},"__N_SSG":true}

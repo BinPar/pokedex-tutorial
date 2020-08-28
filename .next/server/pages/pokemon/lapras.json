@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":131,"name":"lapras","weight":2200,"height":25,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png","types":["water","ice"],"stats":{"hp":130,"attack":85,"defense":80,"special-attack":85,"special-defense":95,"speed":60}}},"__N_SSG":true}

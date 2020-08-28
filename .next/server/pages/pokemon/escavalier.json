@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":589,"name":"escavalier","weight":330,"height":10,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/589.png","types":["bug","steel"],"stats":{"hp":70,"attack":135,"defense":105,"special-attack":60,"special-defense":105,"speed":20}}},"__N_SSG":true}

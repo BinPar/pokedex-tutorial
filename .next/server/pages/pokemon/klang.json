@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":600,"name":"klang","weight":510,"height":6,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/600.png","types":["steel"],"stats":{"hp":60,"attack":80,"defense":95,"special-attack":70,"special-defense":85,"speed":50}}},"__N_SSG":true}

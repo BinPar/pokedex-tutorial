@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":101,"name":"electrode","weight":666,"height":12,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png","types":["electric"],"stats":{"hp":60,"attack":50,"defense":70,"special-attack":80,"special-defense":80,"speed":150}}},"__N_SSG":true}

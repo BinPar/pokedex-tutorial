@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":271,"name":"lombre","weight":325,"height":12,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/271.png","types":["water","grass"],"stats":{"hp":60,"attack":50,"defense":50,"special-attack":60,"special-defense":70,"speed":50}}},"__N_SSG":true}

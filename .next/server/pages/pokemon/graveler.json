@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":75,"name":"graveler","weight":1050,"height":10,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png","types":["rock","ground"],"stats":{"hp":55,"attack":95,"defense":115,"special-attack":45,"special-defense":45,"speed":35}}},"__N_SSG":true}

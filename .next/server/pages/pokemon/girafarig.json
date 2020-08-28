@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":203,"name":"girafarig","weight":415,"height":15,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/203.png","types":["normal","psychic"],"stats":{"hp":70,"attack":80,"defense":65,"special-attack":90,"special-defense":65,"speed":85}}},"__N_SSG":true}

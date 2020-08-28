@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":219,"name":"magcargo","weight":550,"height":8,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/219.png","types":["fire","rock"],"stats":{"hp":60,"attack":50,"defense":120,"special-attack":90,"special-defense":80,"speed":30}}},"__N_SSG":true}

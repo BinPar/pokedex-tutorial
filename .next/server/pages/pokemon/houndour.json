@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":228,"name":"houndour","weight":108,"height":6,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/228.png","types":["dark","fire"],"stats":{"hp":45,"attack":60,"defense":30,"special-attack":80,"special-defense":50,"speed":65}}},"__N_SSG":true}

@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":425,"name":"drifloon","weight":12,"height":4,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/425.png","types":["ghost","flying"],"stats":{"hp":90,"attack":50,"defense":34,"special-attack":60,"special-defense":44,"speed":70}}},"__N_SSG":true}

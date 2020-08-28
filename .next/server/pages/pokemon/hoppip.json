@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":187,"name":"hoppip","weight":5,"height":4,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/187.png","types":["grass","flying"],"stats":{"hp":35,"attack":35,"defense":40,"special-attack":35,"special-defense":55,"speed":50}}},"__N_SSG":true}

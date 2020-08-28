@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":300,"name":"skitty","weight":110,"height":6,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/300.png","types":["normal"],"stats":{"hp":50,"attack":45,"defense":45,"special-attack":35,"special-defense":35,"speed":50}}},"__N_SSG":true}

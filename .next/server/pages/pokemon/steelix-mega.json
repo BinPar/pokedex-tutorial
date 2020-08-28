@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":10072,"name":"steelix-mega","weight":7400,"height":105,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10072.png","types":["steel","ground"],"stats":{"hp":75,"attack":125,"defense":230,"special-attack":55,"special-defense":95,"speed":30}}},"__N_SSG":true}

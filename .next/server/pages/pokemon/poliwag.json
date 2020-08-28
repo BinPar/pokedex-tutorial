@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":60,"name":"poliwag","weight":124,"height":6,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png","types":["water"],"stats":{"hp":40,"attack":50,"defense":40,"special-attack":40,"special-defense":40,"speed":90}}},"__N_SSG":true}

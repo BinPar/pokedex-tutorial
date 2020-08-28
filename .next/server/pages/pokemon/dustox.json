@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":269,"name":"dustox","weight":316,"height":12,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/269.png","types":["bug","poison"],"stats":{"hp":60,"attack":50,"defense":70,"special-attack":50,"special-defense":90,"speed":65}}},"__N_SSG":true}

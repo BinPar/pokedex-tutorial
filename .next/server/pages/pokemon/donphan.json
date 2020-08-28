@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":232,"name":"donphan","weight":1200,"height":11,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/232.png","types":["ground"],"stats":{"hp":90,"attack":120,"defense":120,"special-attack":60,"special-defense":60,"speed":50}}},"__N_SSG":true}

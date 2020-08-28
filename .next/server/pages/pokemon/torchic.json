@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":255,"name":"torchic","weight":25,"height":4,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/255.png","types":["fire"],"stats":{"hp":45,"attack":60,"defense":40,"special-attack":70,"special-defense":50,"speed":45}}},"__N_SSG":true}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"let lastTypes;\nexport const setLastTypes = types => {\n  lastTypes = types;\n};\nexport const getLastTypes = () => {\n  return lastTypes;\n};","map":null,"metadata":{},"sourceType":"module"}

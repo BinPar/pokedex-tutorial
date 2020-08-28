@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":35,"name":"clefairy","weight":75,"height":6,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png","types":["fairy"],"stats":{"hp":70,"attack":45,"defense":48,"special-attack":60,"special-defense":65,"speed":35}}},"__N_SSG":true}

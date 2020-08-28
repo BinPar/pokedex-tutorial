@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":51,"name":"dugtrio","weight":333,"height":7,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png","types":["ground"],"stats":{"hp":35,"attack":100,"defense":50,"special-attack":50,"special-defense":70,"speed":120}}},"__N_SSG":true}

@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":167,"name":"spinarak","weight":85,"height":5,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/167.png","types":["bug","poison"],"stats":{"hp":40,"attack":60,"defense":40,"special-attack":40,"special-defense":40,"speed":30}}},"__N_SSG":true}

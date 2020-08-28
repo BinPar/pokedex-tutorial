@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":98,"name":"krabby","weight":65,"height":4,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png","types":["water"],"stats":{"hp":30,"attack":105,"defense":90,"special-attack":25,"special-defense":25,"speed":50}}},"__N_SSG":true}

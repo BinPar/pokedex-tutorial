@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":43,"name":"oddish","weight":54,"height":5,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png","types":["grass","poison"],"stats":{"hp":45,"attack":50,"defense":55,"special-attack":75,"special-defense":65,"speed":30}}},"__N_SSG":true}

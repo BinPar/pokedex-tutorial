@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":23,"name":"ekans","weight":69,"height":20,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png","types":["poison"],"stats":{"hp":35,"attack":60,"defense":44,"special-attack":40,"special-defense":54,"speed":55}}},"__N_SSG":true}

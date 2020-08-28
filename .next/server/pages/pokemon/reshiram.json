@@ -1,0 +1,1 @@
+{"pageProps":{"pokemon":{"id":643,"name":"reshiram","weight":3300,"height":32,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/643.png","types":["dragon","fire"],"stats":{"hp":100,"attack":120,"defense":100,"special-attack":150,"special-defense":120,"speed":90}}},"__N_SSG":true}
