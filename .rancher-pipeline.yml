@@ -6,6 +6,6 @@ stages:
       buildContext: .
       tag: pokedex-tutorial
       pushRemote: true
-      registry: 3.249.52.79:32371
+      registry: 127.0.0.1:34029
 timeout: 60
 notification: {}
