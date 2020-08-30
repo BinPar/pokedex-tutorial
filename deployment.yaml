@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: pokedex
-          image: docker-registry.p-722bx-pipeline/pokedex:latest
+          image: docker-registry/pokedex:latest
           ports:
             - containerPort: 80
           livenessProbe:
