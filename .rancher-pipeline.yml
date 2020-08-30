@@ -19,12 +19,11 @@ stages:
           dockerfilePath: ./Dockerfile
           buildContext: .
           tag: pokedex/www:latest
-          registry: 10.43.35.128
         env:
           PLUGIN_INSECURE: 'true'
   - name: Deploy
     steps:
       - applyYamlConfig:
           path: ./deployment.yaml
-timeout: 180
+timeout: 60
 notification: {}
