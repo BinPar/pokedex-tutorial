@@ -18,7 +18,9 @@ stages:
           name: "Generate Docker Image "
           dockerfilePath: ./Dockerfile
           buildContext: .
-          tag: pokedex
+          tag: pokedex/www:latest
           registry: 10.43.35.128
-timeout: 160
+        env:
+          PLUGIN_INSECURE: "true"
+timeout: 180
 notification: {}
