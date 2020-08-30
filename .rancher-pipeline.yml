@@ -5,7 +5,7 @@ stages:
       event: [push, pull_request]
     steps:
       - runScriptConfig:
-          name: "Test and audit"
+          name: 'Test and audit'
           image: node:12-alpine
           shellScript: |-
             npm --version
@@ -15,12 +15,16 @@ stages:
             npm run build
             npm run test
       - publishImageConfig:
-          name: "Generate Docker Image "
+          name: 'Generate Docker Image '
           dockerfilePath: ./Dockerfile
           buildContext: .
           tag: pokedex/www:latest
           registry: 10.43.35.128
         env:
-          PLUGIN_INSECURE: "true"
+          PLUGIN_INSECURE: 'true'
+  - name: Deploy
+    steps:
+      - applyYamlConfig:
+          path: ./deployment.yaml
 timeout: 180
 notification: {}
