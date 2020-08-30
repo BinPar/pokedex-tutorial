@@ -4,7 +4,7 @@ LABEL Description="Pokedex Tutorial"
 # Production packages install
 COPY ["package.json", "package-lock.json*", "./"]
 # Compile
-COPY "./", "./source"
+COPY "./" "./source"
 RUN cd source & npm install & npm run build
 RUN cd source & npm run build
 RUN cd source & mv ./.next ../.next 

@@ -1,23 +1,22 @@
 stages:
-- name: Build Docker Image
-  when:
-    branch: master
-    event: [ push, pull_request ]
-  steps:
-  - runScriptConfig:
-      image: node:12-alpine
-      shellScript: |-
-        ls
-        npm --version
-        npm audit        
-        npm i
-        npm run lint
-        npm run build
-        npm run test        
-  - publishImageConfig:
-      dockerfilePath: ./Dockerfile
-      buildContext: .
-      tag: pokedex
-      registry: 10.43.35.128
+  - name: Build Docker Image
+    when:
+      branch: master
+      event: [push, pull_request]
+    steps:
+      - runScriptConfig:
+          image: node:12-alpine
+          shellScript: |-
+            npm --version
+            npm audit    
+            npm install
+            npm run lint
+            npm run build
+            npm run test
+      - publishImageConfig:
+          dockerfilePath: ./Dockerfile
+          buildContext: .
+          tag: pokedex
+          registry: 10.43.35.128
 timeout: 160
 notification: {}
