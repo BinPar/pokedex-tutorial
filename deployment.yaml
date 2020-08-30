@@ -1,8 +1,8 @@
 kind: Service
 apiVersion: v1
-namespace: default
 metadata:
   name: pokedex-service
+  namespace: default
 spec:
   selector:
     app: pokedex
