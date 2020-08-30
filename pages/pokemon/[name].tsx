@@ -1,11 +1,11 @@
 import React from 'react';
 import Head from 'next/head';
 import { GetStaticPaths } from 'next';
+import Link from 'next/link';
 import useToggle from '../../hooks/useToggle';
 import getPokemon from '../../logic/getPokemon';
 import { Pokemon } from '../../model/pokemon';
 import getPokemonCards from '../../logic/pokemonCards';
-import Link from 'next/link';
 
 interface PokemonProps {
   pokemon: Pokemon;
