@@ -1,6 +1,7 @@
 FROM node:12-alpine
 WORKDIR /usr/src/app
 LABEL Description="Pokedex Tutorial"
+EXPOSE 3000/tcp
 # Production packages install
 COPY ["package.json", "package-lock.json*", "./"]
 # Compile
