@@ -9,7 +9,8 @@ stages:
       shellScript: |-
         ls
         npm --version
-        npm install
+        npm audit        
+        npm i
         npm run lint
         npm run build
         npm run test        
