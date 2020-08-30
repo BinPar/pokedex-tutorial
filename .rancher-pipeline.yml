@@ -1,14 +1,17 @@
 stages:
 - name: Build Docker Image
   steps:
+  - runScriptConfig:
+      image: node:latest
+      shellScript: |-
+        npm i
+        npm run test
+        npm run build
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: pokedex/v1
-      pushRemote: true
+      tag: pokedex
       registry: 10.43.35.128
-    env:
-      PLUGIN_INSECURE: "true"
   when:
     branch:
       include:
