@@ -1,3 +1,16 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: pokedex-service
+spec:
+  selector:
+    app: pokedex
+  type: NodePort
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -6,32 +19,28 @@ metadata:
     app: pokedex
 spec:
   replicas: 2
-  selector:  
-    app: pokedex
-  type: NodePort
-  ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 80
+  selector:
+    matchLabels:
+      app: pokedex
   template:
     metadata:
       labels:
         app: pokedex
     spec:
       imagePullSecrets:
-        - name: pipeline-docker-registry
+      - name: pipeline-docker-registry
       containers:
-        - name: pokedex
-          image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}
-          ports:
-          - containerPort: 80
-          livenessProbe:
-            failureThreshold: 3
-            httpGet:
-              path: /healthcheck
-              port: 80
-              scheme: HTTP
-            initialDelaySeconds: 10
-            periodSeconds: 60
-            successThreshold: 1
-            timeoutSeconds: 10
+      - name: pokedex
+        image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}
+        ports:
+        - containerPort: 80
+        livenessProbe:
+          failureThreshold: 3
+          httpGet:
+            path: /healthcheck
+            port: 80
+            scheme: HTTP
+          initialDelaySeconds: 10
+          periodSeconds: 60
+          successThreshold: 1
+          timeoutSeconds: 10
