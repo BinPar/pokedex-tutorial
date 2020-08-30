@@ -18,7 +18,7 @@ stages:
           name: 'Generate Docker Image '
           dockerfilePath: ./Dockerfile
           buildContext: .
-          tag: pokedex/www:latest
+          tag: pokedex:latest
         env:
           PLUGIN_INSECURE: 'true'
   - name: Deploy
