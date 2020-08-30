@@ -39,7 +39,7 @@ spec:
           failureThreshold: 3
           httpGet:
             path: /healthcheck
-            port: 3000
+            port: 80
             scheme: HTTP
           initialDelaySeconds: 10
           periodSeconds: 60
