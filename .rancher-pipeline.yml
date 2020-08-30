@@ -4,7 +4,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: pokedex
+      tag: pokedex/v1
       pushRemote: true
       registry: http://52.213.194.49:32682
   when:
