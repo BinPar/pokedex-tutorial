@@ -5,9 +5,10 @@ stages:
     event: [ push, pull_request ]
   steps:
   - runScriptConfig:
-      image: node:latest
+      image: node:12-alpine
       shellScript: |-
         ls
+        npm --version
         npm install
         npm run lint
         npm run build
