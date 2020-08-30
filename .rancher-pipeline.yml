@@ -5,6 +5,7 @@ stages:
       event: [push, pull_request]
     steps:
       - runScriptConfig:
+          name: "Test and audit"
           image: node:12-alpine
           shellScript: |-
             npm --version
@@ -14,6 +15,7 @@ stages:
             npm run build
             npm run test
       - publishImageConfig:
+          name: "Generate Docker Image "
           dockerfilePath: ./Dockerfile
           buildContext: .
           tag: pokedex
