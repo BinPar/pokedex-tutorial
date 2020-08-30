@@ -1,1 +1,0 @@
-{"ast":null,"code":"var lastTypes;\nexport var setLastTypes = function setLastTypes(types) {\n  lastTypes = types;\n};\nexport var getLastTypes = function getLastTypes() {\n  return lastTypes;\n};","map":null,"metadata":{},"sourceType":"module"}

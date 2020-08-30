@@ -5,6 +5,7 @@ import useToggle from '../../hooks/useToggle';
 import getPokemon from '../../logic/getPokemon';
 import { Pokemon } from '../../model/pokemon';
 import getPokemonCards from '../../logic/pokemonCards';
+import Link from 'next/link';
 
 interface PokemonProps {
   pokemon: Pokemon;
@@ -25,11 +26,6 @@ const PokemonPage = ({ pokemon }: PokemonProps): JSX.Element => {
   const [showStats, toggleStats] = useToggle(true);
 
   const text = `Pokemon ${pokemon.name}`;
-
-  const goBack = (ev: React.MouseEvent): void => {
-    ev.preventDefault();
-    window.history.back();
-  }
 
   return (
     <React.Fragment>
@@ -74,8 +70,10 @@ const PokemonPage = ({ pokemon }: PokemonProps): JSX.Element => {
             ))}
           </dl>
         ) : null}
-        <div style={{ width: '100%', clear: 'both', paddingTop: 20 }}>
-          <a href="/" onClick={goBack}>Back</a>          
+        <div style={{ width: '100%', clear: 'both', paddingTop: 20 }}>          
+          <Link href="/">
+            <a href="/">Back</a>
+          </Link>
         </div>
       </main>
     </React.Fragment>

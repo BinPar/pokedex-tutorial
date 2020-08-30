@@ -165,7 +165,7 @@ exports[`Pokemon Page: expanded 1`] = `
           onClick={[Function]}
           onMouseEnter={[Function]}
         >
-          Ir a home
+          Back
         </a>
       </Link>
     </div>
@@ -280,7 +280,7 @@ exports[`Pokemon Page: notExpanded 1`] = `
           onClick={[Function]}
           onMouseEnter={[Function]}
         >
-          Ir a home
+          Back
         </a>
       </Link>
     </div>

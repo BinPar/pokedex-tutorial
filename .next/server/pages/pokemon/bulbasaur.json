@@ -1,1 +1,0 @@
-{"pageProps":{"pokemon":{"id":1,"name":"bulbasaur","weight":69,"height":7,"imageURL":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png","types":["grass","poison"],"stats":{"hp":45,"attack":49,"defense":49,"special-attack":65,"special-defense":65,"speed":45}}},"__N_SSG":true}
