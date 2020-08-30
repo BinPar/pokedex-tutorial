@@ -18,7 +18,7 @@ stages:
           name: 'Generate Docker Image '
           dockerfilePath: ./Dockerfile
           buildContext: .
-          tag: pokedex-tutorial/pokedex:latest
+          tag: pokedex:${CICD_EXECUTION_SEQUENCE}
         env:
           PLUGIN_INSECURE: 'true'
   - name: Deploy
