@@ -72,7 +72,7 @@ const PokemonPage = ({ pokemon }: PokemonProps): JSX.Element => {
         ) : null}
         <div style={{ width: '100%', clear: 'both', paddingTop: 20 }}>          
           <Link href="/">
-            <a href="/">Back</a>
+            <a href="/">Back To Home</a>
           </Link>
         </div>
       </main>
