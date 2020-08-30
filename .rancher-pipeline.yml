@@ -6,7 +6,7 @@ stages:
       buildContext: .
       tag: pokedex/v1
       pushRemote: true
-      registry: http://52.213.194.49:32682
+      registry: 10.43.35.128
   when:
     branch:
       include:
