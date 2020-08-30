@@ -2,7 +2,6 @@ kind: Service
 apiVersion: v1
 metadata:
   name: pokedex-service
-  namespace: default
 spec:
   selector:
     app: pokedex
@@ -34,7 +33,7 @@ spec:
       - name: pokedex
         image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}
         ports:
-        - containerPort: 80
+        - containerPort: 3000
         livenessProbe:
           failureThreshold: 3
           httpGet:
