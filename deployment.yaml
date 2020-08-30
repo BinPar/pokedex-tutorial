@@ -1,10 +1,6 @@
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: pokedex-prod
----
 kind: Service
 apiVersion: v1
+namespace: default
 metadata:
   name: pokedex-service
 spec:
