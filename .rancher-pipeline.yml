@@ -2,9 +2,9 @@ stages:
 - name: Build Docker Image
   steps:
   - runScriptConfig:
-      image: node:12-alpine
+      image: node:12
       shellScript: |-
-        npm i
+        npm install
         npm run lint
         npm run build
         npm run test        
