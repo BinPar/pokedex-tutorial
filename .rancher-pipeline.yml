@@ -1,29 +1,27 @@
 stages:
-  - name: Build Docker Image
-    when:
-      branch: master
-      event: [push, pull_request]
-    steps:
-      - runScriptConfig:
-          name: 'Test and audit'
-          image: node:12-alpine
-          shellScript: |-
-            npm --version
-            npm audit    
-            npm install
-            npm run lint
-            npm run build
-            npm run test
-      - publishImageConfig:
-          name: 'Generate Docker Image '
-          dockerfilePath: ./Dockerfile
-          buildContext: .
-          tag: pokedex:${CICD_EXECUTION_SEQUENCE}
-        env:
-          PLUGIN_INSECURE: 'true'
-  - name: Deploy
-    steps:
-      - applyYamlConfig:
-          path: ./deployment.yaml
+- name: Build Docker Image
+  steps:
+  - runScriptConfig:
+      image: node:12-alpine
+      shellScript: "npm --version\nnpm audit    \nnpm install\nnpm run lint\nnpm run
+        build\nnpm run test"
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: pokedex:${CICD_EXECUTION_SEQUENCE}
+    env:
+      PLUGIN_INSECURE: "true"
+  when:
+    branch:
+      include:
+      - master
+    event:
+      include:
+      - push
+      - pull_request
+- name: Deploy
+  steps:
+  - applyYamlConfig:
+      path: ./deployment.yaml
 timeout: 60
 notification: {}
