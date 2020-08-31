@@ -9,6 +9,7 @@ COPY "./" "./source"
 RUN cd source;npm install
 RUN cd source;npm run build
 RUN cd source;mv ./.next ../.next 
+RUN cd source;mv ./public ../public
 RUN rm -rf source
 # Install production modules
 RUN npm install --production --silent
