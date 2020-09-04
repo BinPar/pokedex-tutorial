@@ -5,8 +5,9 @@ EXPOSE 3000/tcp
 # Production packages install
 COPY ["package.json", "package-lock.json*", "./"]
 # Compile
-COPY "./" "./source"
+COPY ["package.json", "package-lock.json*", "./source/"]
 RUN cd source;npm install
+COPY "./" "./source"
 RUN cd source;npm run build
 RUN cd source;mv ./.next ../.next 
 RUN cd source;mv ./public ../public
