@@ -9,4 +9,4 @@ Pokedex tutorial using:
 - mongo
 - next-js
 
-Visit the [demo site](https://pokedex-tutorial.vercel.app/)
+Visit the [demo site](https://pokedex-tutorial.vercel.app)
