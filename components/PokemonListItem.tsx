@@ -6,7 +6,11 @@ const PokemonListItem = ({id,name,types}: PokemonCard ): JSX.Element => {
    
   return (
     <li key={id}>
-      <strong>{name}</strong>      
+      <strong>
+        <Link href={`/pokemon/${name}`}>
+          <a>{name}</a>
+        </Link>
+      </strong>      
       :
       {
         types.map((type, i) => (
