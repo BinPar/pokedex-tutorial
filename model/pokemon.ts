@@ -8,6 +8,7 @@ export interface PokemonCard {
 export interface Stats {
   [name: string]: number;
 }
+
 export interface Pokemon extends PokemonCard {
   stats: Stats;
   height: number;
