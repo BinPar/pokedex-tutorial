@@ -9,9 +9,9 @@
     "lint": "eslint \"**/*.{ts,tsx}\" --ignore-pattern node_modules/",
     "test-clear": "rm -rf test/tests/ui/__snapshots__;rm -rf coverage;rm -rf .next",
     "test-coverage": "jest --coverage",
-    "test-coverage-dev": "NODE_ENV=development jest --coverage --watchAll",
+    "test-coverage-dev": "jest --coverage --watchAll",
     "test": "jest",
-    "test-dev": "NODE_ENV=development npx jest --watch"
+    "test-dev": "npx jest --watch"
   },
   "repository": {
     "type": "git",
