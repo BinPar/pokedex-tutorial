@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link'
-import useToggle from 'hooks/useToggle';
+import useIsOnWindow from 'hooks/useIsOnWindow';
+import useToggle from '../hooks/useToggle';
 import { PokemonCard } from '../model/pokemon';
 
 const PokemonListItem = ({id,name,types,imageURL}: PokemonCard ): JSX.Element => {
-  const [showImage,toggleImage] = useToggle(false);
+   
   return (
     <li key={id}>
-      <strong>{name}</strong>
-      <a href="#" onClick={toggleImage}>[I]</a>
+      <strong>{name}</strong>      
       :
       {
         types.map((type, i) => (
@@ -19,11 +19,6 @@ const PokemonListItem = ({id,name,types,imageURL}: PokemonCard ): JSX.Element =>
             </Link>
           </span>
         ))
-      }
-      {
-        showImage?(
-          <img src={imageURL} alt={name} />
-        ):null
       }
     </li>
   );

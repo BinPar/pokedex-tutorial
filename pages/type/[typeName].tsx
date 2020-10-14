@@ -1,5 +1,6 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import React from 'react';
+import Link from 'next/link';
 import filterByType from '../../logic/filterByType';
 import { PokemonCard } from '../../model/pokemon';
 import PokemonList from '../../components/PokemonList';
@@ -17,6 +18,9 @@ const index = ({myPokemonCardList, typeName}: TypeProps ): JSX.Element => (
       {' '}
       {typeName}
     </h1>
+    <Link href="/">
+      <a>Home</a>
+    </Link>
     <PokemonList title={`My list of pokemons of type ${typeName}`} pokemonCardList={myPokemonCardList} />
   </>
 );

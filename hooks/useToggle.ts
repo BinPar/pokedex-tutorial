@@ -6,7 +6,10 @@ import { useState } from "react";
  */
 const useToggle = (defaultValue: boolean): [boolean, () => void] => {  
   const [value, setValue] = useState<boolean>(defaultValue);
-  const toggle = (): void => setValue(current => !current);
+  const toggle = (ev? : Event): void => {
+    ev.preventDefault()
+    setValue(current => !current);
+  }
   return [value, toggle];
 }
 
