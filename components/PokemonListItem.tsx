@@ -1,10 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react';
-import Link from 'next/link'
-import useIsOnWindow from 'hooks/useIsOnWindow';
-import useToggle from '../hooks/useToggle';
+import React from 'react';
+import Link from 'next/link';
 import { PokemonCard } from '../model/pokemon';
 
-const PokemonListItem = ({id,name,types,imageURL}: PokemonCard ): JSX.Element => {
+const PokemonListItem = ({id,name,types}: PokemonCard ): JSX.Element => {
    
   return (
     <li key={id}>

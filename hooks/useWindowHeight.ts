@@ -6,9 +6,7 @@ const useWindowHeight =  (): number => {
   useEffect(() => {
     updateHeight();
     window.addEventListener('resize', updateHeight);
-    console.log('subscribing to changes');
     return (): void => {
-      console.log('unsubscribing to changes');
       window.removeEventListener('resize', updateHeight);
     };
   }, []);
