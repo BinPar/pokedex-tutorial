@@ -1,5 +1,6 @@
 import React from 'react';
 import pokemonCardList from '../logic/pokemonCardList';
+import PokemonListItem from './PokemonListItem';
 
 interface PokemonListProps {
   title: string;
@@ -17,9 +18,7 @@ const PokemonList = ({title}: PokemonListProps): JSX.Element => {
     <>
       <h2>{title}</h2>
       <ul style={pokemonListStyle}>
-        {
-          orderedPokemonList.map(({id,name}) => <li key={id}>{name}</li>)
-        }
+        {orderedPokemonList.map(PokemonListItem)}
       </ul>
     </>
   );
