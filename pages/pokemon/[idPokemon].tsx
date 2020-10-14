@@ -1,21 +1,20 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import React from 'react';
 import Link from 'next/link';
-import { PokemonCard } from '../../model/pokemon';
-import pokemonCardList from '../../logic/pokemonCardList';
+import { Pokemon } from '../../model/pokemon';
+import pokemonList from '../../logic/pokemonList';
 
 interface TypeProps {
   idPokemon: string;
-  myPokemonCardList: PokemonCard;
+  myPokemonList: Pokemon;
 }
 
 const pokemonIdStyle: React.CSSProperties = {
   display: 'flex',
   alignItems: 'center'
-
 };
 
-const index = ({myPokemonCardList, idPokemon}: TypeProps ): JSX.Element => (  
+const index = ({myPokemonList, idPokemon}: TypeProps ): JSX.Element => (  
   <>
     <h1>
       Pokemon ID :
@@ -23,41 +22,55 @@ const index = ({myPokemonCardList, idPokemon}: TypeProps ): JSX.Element => (
       {idPokemon}
     </h1>
 
-    <div>
       <ul>
         <strong> name:</strong>
         {
-          myPokemonCardList.name
+          myPokemonList.name
         }
       </ul>
+
       <ul style = {pokemonIdStyle} >
         <strong>types:</strong>
           { 
             //Lo ideal aqui sería reutilizar esta parte que se repite en la página home (Exportarlo como un componente)
-            myPokemonCardList.types.map((type, i) =>
+            myPokemonList.types.map((type, index) =>
               <span key={type}> 
-              {i===0?' ':', '}
-              <Link href={`/type/${type}`}>
-                <a>{type}</a>
-              </Link>
+              { index == 0 ? ' ' : ', ' }
+                <Link href={`/type/${type}`}>
+                  <a>{type}</a>
+                </Link>
               </span>
             )
           }
       </ul>
-    </div>
-      <img alt={myPokemonCardList.name} src= { myPokemonCardList.imageURL }></img>
     
+    <ul>
+        <p> <strong>weight: </strong> {myPokemonList.weight}</p>
+        <p> <strong>height: </strong> {myPokemonList.height}</p>
+        <p> 
+          { 
+            //Tengo dudas si esta es la mejor manera de hacerlo, ya que también podría hacer un object.entries y recorrerlos con el map 
+            JSON.stringify(myPokemonList.stats, null, 2) 
+          } 
+        </p>
+    
+    </ul>
+    
+        
+    <img alt={myPokemonList.name} src= { myPokemonList.imageURL }></img>
+
     <p>
       <Link href="/">
         <a>Back to Home</a>
       </Link>
     </p>
+
   </>
 );
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
-    paths: pokemonCardList.map(pokemon => ({ params: { idPokemon: pokemon.id.toString() } })),
+    paths: pokemonList.map(pokemon => ({ params: { idPokemon: pokemon.id.toString() } })),
     fallback: false,
   }
 }
@@ -65,11 +78,11 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps<TypeProps> = 
   async ({params}: {params: {idPokemon: string}}): Promise<{ props: TypeProps }> => {
-    const myPokemonCardList = pokemonCardList.find(pokemon => pokemon.id.toString() === params.idPokemon);
+    const myPokemonList = pokemonList.find(pokemon => pokemon.id.toString() === params.idPokemon);
     return {
       props: {
         idPokemon: params.idPokemon,
-        myPokemonCardList,
+        myPokemonList,
       }
     }
 };

@@ -4,10 +4,16 @@ import { PokemonCard } from '../model/pokemon';
 
 const PokemonListItem = ({id,name,types}: PokemonCard ): JSX.Element => {
    
+  const pokemonListItem: React.CSSProperties = {
+    cursor: 'pointer'
+  };
+
   return (
     <li key={id}>
-      <Link href={`/id/${id}`} >
-        <strong>{name}</strong>
+      <Link href={`/pokemon/${id.toString()}`} >
+        <strong>
+          <a style={pokemonListItem} > {name} </a>
+        </strong>
       </Link>    
       :
       {
