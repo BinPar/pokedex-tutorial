@@ -1,5 +1,6 @@
-import { PokemonCard } from 'model/pokemon';
-import React from 'react';
+import React  from 'react';
+import useToggle from '../hooks/useToggle';
+import { PokemonCard } from '../model/pokemon';
 import PokemonListItem from './PokemonListItem';
 
 interface PokemonListProps {
@@ -12,12 +13,17 @@ const pokemonListStyle: React.CSSProperties = {
 };
 
 const PokemonList = ({title, pokemonCardList}: PokemonListProps): JSX.Element => {
-  const ascending = true;
+  const [ascending,toggleAscending] = useToggle(true);
   let orderedPokemonList = [...pokemonCardList];
   orderedPokemonList = orderedPokemonList.sort((a, b) => a.name.localeCompare(b.name) * (ascending ? 1: -1));
   return (
     <>
       <h2>{title}</h2>
+      <p>
+        <button type="button" onClick={toggleAscending}>
+          {ascending ? 'Order ascendente' : 'Orden descendente'}
+        </button>
+      </p>
       <ul style={pokemonListStyle}>
         {orderedPokemonList.map(PokemonListItem)}
       </ul>
