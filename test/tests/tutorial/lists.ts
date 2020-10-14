@@ -1,15 +1,11 @@
-import * as Types from '../../../model/pokemon';
-import pokemonJSON from '../../../data/pokemon.json';
+import pokemonList from '../../../logic/pokemonList';
+import pokemonCardList from '../../../logic/pokemonCardList';
+import filterByType from '../../../logic/filterByType';
 
-const pokemonList = pokemonJSON as Types.Pokemon[];
+const grassFilter = filterByType('grass');
 
-const filterByType = (type: string): Types.Pokemon[] => 
-  pokemonList.filter(
-    (pokemon: Types.Pokemon): boolean => pokemon.types.includes(type)
-  );
-
-test('Total grass pokemons', (): void => {
-  const grassPokemons = filterByType('grass');
+test('Total grass pokemons', (): void => {  
+  const grassPokemons = grassFilter(pokemonCardList);
   expect(grassPokemons.length).toBe(108);
 });
 
