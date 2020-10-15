@@ -11,16 +11,13 @@ Pokedex tutorial using:
 
 
 
+Para el ejercicio final de una nueva página con los datos de un pokemon clickado:
 
-Creo una nueva lógica llamada pokemon.ts. En ella recojo todas las características de un pokemon desde model/pokemon.ts:
-<img src=captures/Logic_pokemon-ts.png>
+- Creo una nueva lógica llamada pokemon.ts. En ella recojo todas las características de un pokemon desde model/pokemon.ts.
+- Dentro del model/pokemon.ts creo un nuevo interface para tipar los stats del pokemon.
+- Después he creado una page llamada [pokemonName].tsx. Dentro llamo a la función para traer los datos, busco en toda la lista de pokemons el que coincide con el link clickado. Y doy formato a esa info para mostrarla en pantalla en una nueva página
 
-Dentro del model/pokemon.ts creo un nuevo interface para tipar los stats del pokemon:
-<img src=captures/NewInterface_model_pokemon-ts.png>
-
-Después he creado una page llamada [pokemonName].tsx. Dentro llamo a la función para traer los datos, busco en toda la lista de pokemons el que coincide con el link clickado. Y doy formato a esa info para mostrarla en pantalla en una nueva página:
-<img src=captures/Page_pokemonName-tsx_1.png>
-<img src=captures/Page_pokemonName-tsx_2.png>
-<img src=captures/Page_pokemonName-tsx_3.png>
-
-El resultado final es este:
+Adjunto algunas capturas con todo el resultado:
+<img src=captures/Capture1.png>
+<img src=captures/Capture2.png>
+<img src=captures/Resultado.png>
