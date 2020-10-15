@@ -9,7 +9,7 @@ interface IndexProps {
 
 const index = ({myPokemon}: IndexProps ): JSX.Element => (
   <>
-    <h1>{`Nombre: `}{myPokemon.name}</h1>
+    <h2>{`Nombre: `}{myPokemon.name}</h2>
     <strong>{`ID: `}{myPokemon.id}</strong>
     <p><img src={myPokemon.imageURL} /></p>
     <p>
@@ -33,14 +33,14 @@ const index = ({myPokemon}: IndexProps ): JSX.Element => (
     </p>
     <p>
       <b>{`Stats: `}</b>
-        <li>
-          {`HP: `}{myPokemon.stats.hp}
-          {`Attack: `}{myPokemon.stats.attack}
-          {`Defense: `}{myPokemon.stats.defense}
-          {`Special attack: `}{myPokemon.stats.specialAttack}
-          {`Special defense: `}{myPokemon.stats.specialDefense}
-          {`Speed: `}{myPokemon.stats.speed}
-        </li>
+        <ul>
+          <li>{`HP: `}{myPokemon.stats.hp}</li>
+          <li>{`Attack: `}{myPokemon.stats.attack}</li>
+          <li>{`Defense: `}{myPokemon.stats.defense}</li>
+          <li>{`Special attack: `}{myPokemon.stats["special-attack"]}</li>
+          <li>{`Special defense: `}{myPokemon.stats["special-defense"]}</li>
+          <li>{`Speed: `}{myPokemon.stats.speed}</li>
+        </ul>
     </p>
 
     <Link href="/">
@@ -71,7 +71,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps<IndexProps> = 
   async ({params}: {params: {pokemonName: string}}): Promise<{ props: IndexProps }> => {
     const myPokemon = pokemonList.find((pokemon) => pokemon.name === params.pokemonName);
-    console.log(myPokemon);
     return {
       props: {
         myPokemon
