@@ -1,9 +1,6 @@
 import { Pokemon } from '../model/pokemon';
 import pokemonList from './pokemonList';
 
-/**
- * Obtain a pokemon card list from the pokemon linst
- */
 const pokemonData = pokemonList.map((pokemon): Pokemon => (
   {
     id: pokemon.id,
