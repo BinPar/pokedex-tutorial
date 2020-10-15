@@ -24,3 +24,4 @@ Después he creado una page llamada [pokemonName].tsx. Dentro llamo a la funció
 <img src=captures/Page_pokemonName-tsx_3.png>
 
 El resultado final es este:
+<img src=captures/Resultado.png>
